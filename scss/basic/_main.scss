@@ -6,26 +6,38 @@ main{
 
 section{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-container{
     width: 100%;
-
-    a{
-        display: inline-block;
-        width: inherit;
-        height: inherit;
-
-        figure{
-            width: inherit;
-            height: inherit;
-
-            img{
-                width: inherit;
-                height: inherit;
-                object-fit: cover;
-            }
-        }
-    }
 }
 
+a{
+    // display: block;
+}
+
+figure{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-img{
+    width: 100%;
+    max-width: none;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translate(0, -50%);
+}
+
+.lammhult{
+    left: 0;
+    top:60%;
+    transform: translate(0, -60%);
+}
