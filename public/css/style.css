@@ -121,3 +121,49 @@ main {
   height: 100vh;
   background-color: green;
 }
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  width: 100%;
+}
+
+figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  max-width: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.lammhult {
+  left: 0;
+  top: 60%;
+  transform: translate(0, -60%);
+}
+
+@media screen and (min-width: 820px) {
+  .project-container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .project-container {
+    width: 33.33%;
+  }
+}
