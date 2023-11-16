@@ -51,8 +51,9 @@ header {
   height: 90px;
   display: flex;
   justify-content: flex-start;
-  position: fixed;
+  position: relative;
   top: 0;
+  z-index: 9;
 }
 
 .header-left,
@@ -94,30 +95,37 @@ header {
   background-color: black;
 }
 .header-right .nav-menu {
-  width: 100%;
-  position: fixed;
-  top: 90px;
-  left: 100%;
+  width: 75%;
+  height: 30vh;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  margin-top: 90px;
   padding: 24px 24px 0 24px;
+  z-index: 9;
+  background-color: gray;
+  border-radius: 0 0 0 50px;
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.header-right .nav-menu li {
-  border-top: 1px solid black;
-}
-.header-right .nav-menu li:last-child {
+.header-right .nav-menu .nav-item {
+  padding: 15px 0;
   border-bottom: 1px solid black;
 }
-.header-right .nav-menu li:first-child {
-  border-top: transparent;
+.header-right .nav-menu .nav-link {
+  align-items: center;
 }
 .header-right .nav-menu.active {
-  left: 0;
+  left: 25%;
+  visibility: visible;
+  opacity: 1;
 }
 .header-right a {
   color: black;
 }
 
 main {
-  margin-top: 90px;
   height: 100vh;
   background-color: green;
 }
@@ -149,6 +157,7 @@ figure {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+  z-index: 1;
 }
 
 .lammhult {

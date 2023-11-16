@@ -4,8 +4,9 @@ header{
     height: 90px;
     display: flex;
     justify-content: flex-start;
-    position: fixed;
+    position: relative;
     top: 0;
+    z-index: 9;
 }
 
 .header-left,
@@ -65,30 +66,36 @@ header{
     }
 
     .nav-menu{
-        width: 100%;
-        position: fixed;
-        top: 90px;
-        left: 100%;
+        width: 75%;
+        height: 30vh;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        margin-top: 90px;
         padding: 24px 24px 0 24px;
+        z-index: 9;
+        background-color: gray;
+        border-radius: 0 0 0 50px;
+        transition: all 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
 
         .nav-item{
-            // margin: 16px 0;
-        }
-
-        li{
-            border-top: 1px solid black;
-        }
-        
-        li:last-child{
+            padding: 15px 0;
             border-bottom: 1px solid black;
         }
-        li:first-child{
-            border-top: transparent;
+        
+        .nav-link{
+            align-items: center;
         }
     }
     
     .nav-menu.active{
-    left: 0;
+        left: 25%;
+        visibility: visible;
+        opacity: 1;
+        
     }
 
     a{

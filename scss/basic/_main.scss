@@ -1,5 +1,4 @@
 main{
-    margin-top: 90px;
     height: 100vh;
     background-color: green;
 }
@@ -34,6 +33,7 @@ figure{
     left: 0;
     top:50%;
     transform: translate(0, -50%);
+    z-index: 1;
 }
 
 .lammhult{
