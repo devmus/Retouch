@@ -3,3 +3,29 @@ main{
     height: 100vh;
     background-color: green;
 }
+
+section{
+    display: flex;
+}
+
+.project-container{
+    width: 100%;
+
+    a{
+        display: inline-block;
+        width: inherit;
+        height: inherit;
+
+        figure{
+            width: inherit;
+            height: inherit;
+
+            img{
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
