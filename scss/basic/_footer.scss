@@ -6,12 +6,38 @@ footer{
         width: 100%;
         height: 48px;
         border-top: 0.5px solid gray;
-        border-left: 0.5px solid gray;
+        display: flex;
+
+        .instagram{
+            border-right: 0.5px solid gray;
+            border-left: 0.5px solid transparent;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                height: 50%;
+            }
+        }
     }
 
-    .container-copy{
+    .site-info{
         width:100%;
         height: 48px;
+        padding-left: 10px;
         border-top: 0.5px solid gray;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        span{
+            padding-right: 3px;
+        }
     }
+}
+
+.site-info::after{
+    content: " © Copyright 2016-2023 All rights reserved."
 }

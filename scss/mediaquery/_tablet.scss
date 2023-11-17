@@ -1,3 +1,22 @@
 .project-container{
     width: 50%;
 }
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .container-socials{
+        width: 50%;
+        justify-content: flex-end;
+
+        .instagram{
+            border-right: 0.5px solid transparent;
+            border-left: 0.5px solid gray;
+        }
+    }
+
+    .site-info{
+        width: 50%;
+    }
+}
