@@ -1,7 +1,5 @@
 main{
-    margin-top: 90px;
-    height: 100vh;
-    background-color: green;
+
 }
 
 section{
@@ -32,12 +30,75 @@ figure{
     object-fit: contain;
     position: absolute;
     left: 0;
-    top:50%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+// ------------------------------------------------------ //
+// ----------------------- IMG VAR ---------------------- //
+// ------------------------------------------------------ //
+.move100{
+    left: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.move90{
+    left: 0;
+    top: 90%;
+    transform: translate(0, -90%);
+}
+
+.move80{
+    left: 0;
+    top: 80%;
+    transform: translate(0, -80%);
+}
+
+.move70{
+    left: 0;
+    top: 70%;
+    transform: translate(0, -70%);
+}
+
+.move60{
+    left: 0;
+    top: 60%;
+    transform: translate(0, -60%);
+}
+
+.move50{
+    left: 0;
+    top: 50%;
     transform: translate(0, -50%);
 }
 
-.lammhult{
+.move40{
     left: 0;
-    top:60%;
-    transform: translate(0, -60%);
+    top: 40%;
+    transform: translate(0, -40%);
+}
+
+.move30{
+    left: 0;
+    top: 30%;
+    transform: translate(0, -30%);
+}
+
+.move20{
+    left: 0;
+    top: 20%;
+    transform: translate(0, -20%);
+}
+
+.move10{
+    left: 0;
+    top: 10%;
+    transform: translate(0, -10%);
+}
+
+.move0{
+    left: 0;
+    top: 0%;
+    transform: translate(0, 0%);
 }

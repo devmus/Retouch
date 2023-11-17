@@ -1,3 +1,13 @@
 .project-container{
     width: 33.33%;
 }
+
+header{
+    height: $header_d;
+}
+
+.header-right{
+    .nav-menu{
+        margin-top: $header_d;
+    }
+}
