@@ -6,6 +6,8 @@
 
 @import 'basic/main';
 
+@import 'basic/footer';
+
 @media screen and (min-width: 820px){
     @import 'mediaquery/tablet'
 }

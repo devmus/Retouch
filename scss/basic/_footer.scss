@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+
+    .container-socials{
+        width: 100%;
+        height: 48px;
+        border-top: 0.5px solid gray;
+        border-left: 0.5px solid gray;
+    }
+
+    .container-copy{
+        width:100%;
+        height: 48px;
+        border-top: 0.5px solid gray;
+    }
+}
