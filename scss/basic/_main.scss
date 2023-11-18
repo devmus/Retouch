@@ -22,26 +22,63 @@ figure{
     padding-bottom: 100%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    background-color: black;
+
+    figcaption{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        .project-text{
+            position: absolute;
+            bottom: 0;
+            padding: 8px;
+            color: white;
+            visibility: hidden;
+        }
+
+        .project-text-active{
+            visibility: visible;
+        }
+    }
+
+
 }
 
 .project-img{
-    width: 100%;
+    width: 101%;
+    height: auto;
     max-width: none;
     object-fit: contain;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
-    z-index: 1;
+    transition: scale 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.project-img-active{
+    scale: 101% 101%;
+    transform: b(0);
+}
+
+.filter{
+    transition: backdrop-filter 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.filter-active{
+    backdrop-filter: grayscale(100%);
+}
+
+
+
+
 // ------------------------------------------------------ //
 // ----------------------- IMG VAR ---------------------- //
 // ------------------------------------------------------ //
-.move100{
-    left: 0;
-    top: 100%;
-    transform: translate(0, -100%);
-}
 
 .move90{
     left: 0;
@@ -95,10 +132,4 @@ figure{
     left: 0;
     top: 10%;
     transform: translate(0, -10%);
-}
-
-.move0{
-    left: 0;
-    top: 0%;
-    transform: translate(0, 0%);
 }
