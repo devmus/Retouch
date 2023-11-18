@@ -29,3 +29,4 @@ filters.forEach((filter, index) => {
         texts[index].classList.remove("project-text-active");
     });
 });
+

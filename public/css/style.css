@@ -147,7 +147,6 @@ figure {
   overflow: hidden;
   position: relative;
   display: flex;
-  background-color: black;
 }
 figure figcaption {
   position: absolute;
